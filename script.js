@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const codificarButton = document.querySelector('.container-bottom .botao:nth-child(1)');
     const descodificarButton = document.querySelector('.container-bottom .botao:nth-child(2)');
     const copiarButton = document.getElementById('copiar');
-    const limparButton = document.getElementById('limpar')
+    const limparButton = document.getElementById('limpar');
     outputTextArea.style.backgroundImage = 'url(./SRC/Assets/logo/image.svg)';
     
     codificarButton.addEventListener('click', function() {
