@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
       inputTextArea.value = '';
       
     });
-  
+
     copiarButton.addEventListener('click', function() {
       outputTextArea.select();
       navigator.clipboard.writeText(outputTextArea.value)
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .catch(function(error) {
           console.error('Erro ao copiar texto:', error);
         });
-        
+      });
       colarButton.addEventListener('click', function() {
       navigator.clipboard.readText()
         .then(function(text) {
@@ -115,4 +115,4 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     return textoDescriptografado;
   }
-})
+
