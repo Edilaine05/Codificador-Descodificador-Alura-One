@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #0e60f7 0%, #6a82fb 25%, #fc5c7d 100%);
+  animation: gradient 8s ease infinite;
+  background-size: 100% 300%;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 100%;
+  }
+
+  50% {
+    background-position: 100% 0%;
+  }
+
+  100% {
+    background-position: 0% 100%;
+  }
+}
+.container-header {
+  border-bottom: 2px solid #073488;
+}
+.logos-header {
+  height: 100px;
+  padding-left: 6rem;
+  display: flex;
+  align-items: center;
+}
+.links {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.nav_link {
+  transition: all 1s ease-out;
+  display: inline-table;
+}
+.nav_link:hover {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+.Link {
+  color: #ff0000;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.container-principal {
+  display: flex;
+  flex-direction: column;
+}
+.container-titulo {
+  text-align: center;
+  font-family: "Righteous", cursive;
+  font-size: 3.8rem;
+  color: #073488;
+}
+.container-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input-texto-area {
+  background-color: #f5f5f562;
+  border: none;
+  color: #073488;
+  width: 420px;
+  height: 400px;
+  margin: 0 0 1rem 1rem;
+  padding: 1rem;
+  border-radius: 1.4rem;
+  border: 1px solid;
+  font-size: 1rem;
+  display: inline-table;
+}
+.input-texto-area1 {
+  background-color: #f5f5f562;
+  border: none;
+  color: #073488;
+  width: 420px;
+  height: 400px;
+  padding: 1rem;
+  margin: 0 0 1rem 1rem;
+  border-radius: 1.4rem;
+  border: 1px solid;
+  font-size: 1rem;
+  display: inline-table;
+  background-image: url(./SRC/Assets/logo/image.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.textarea::placeholder {
+  color: #0a3871;
+  font-family: "sarala", sans-serif;
+  font-size: 1rem;
+}
+.texto-atencao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.5rem;
+  color: #073488;
+  font-size: 1.5rem;
+  gap: 1rem;
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+.container-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button {
+  width: 10rem;
+  height: 3rem;
+  border-radius: 30px;
+}
+.botao {
+  border: 1px solid #0a3871;
+  background-color: #0a38715b;
+  color: #d8dfe8;
+  margin: 0.3rem;
+  cursor: pointer;
+}
+
+.botao:hover {
+  border: 1px solid #0a3871;
+  background-color: #0a3871;
+  color: #d8dfe8;
+}
+.rodape-main{
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.rodape-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+h3{
+    font-weight: 300px;
+    font-size: 16px;
+    color: #cfcfcf
+}
