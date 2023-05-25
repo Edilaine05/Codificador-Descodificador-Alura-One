@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const codificarButton = document.querySelector('.container-bottom .botao:nth-child(1)');
     const descodificarButton = document.querySelector('.container-bottom .botao:nth-child(2)');
     const copiarButton = document.getElementById('copiar');
+    const copiarButton = document.getElementById('colar');
     const limparButton = document.getElementById('limpar')
     
     
@@ -42,6 +43,16 @@ document.addEventListener('DOMContentLoaded', function() {
         .catch(function(error) {
           console.error('Erro ao copiar texto:', error);
         });
+        
+        colarButton.addEventListener('click', function() {
+      navigator.clipboard.readText()
+        .then(function(text) {
+          inputTextArea.value = text;
+        })
+        .catch(function(error) {
+          console.error('Erro ao colar texto:', error);
+        });
+        
     });
     limparButton.addEventListener('click', function() {
         outputTextArea.value = '';
