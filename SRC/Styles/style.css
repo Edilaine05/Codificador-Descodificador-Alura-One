@@ -93,7 +93,7 @@ body {
   border: 1px solid;
   font-size: 1rem;
   display: inline-table;
-  background-image: url("./SRC/Assets/logo/image.svg");
+  background-image: url("SRC/Assets/logo/image.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
