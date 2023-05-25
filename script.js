@@ -5,7 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const descodificarButton = document.querySelector('.container-bottom .botao:nth-child(2)');
     const copiarButton = document.getElementById('copiar');
     const limparButton = document.getElementById('limpar')
-  
+    outputTextArea.style.backgroundImage = 'url(./SRC/Assets/logo/image.svg)';
+    
     codificarButton.addEventListener('click', function() {
       const textoOriginal = inputTextArea.value.toLowerCase();
       const textoCriptografado = criptografar(textoOriginal);
