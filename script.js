@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const descodificarButton = document.querySelector('.container-bottom .botao:nth-child(2)');
     const copiarButton = document.getElementById('copiar');
     const colarButton = document.getElementById('colar');
-    const limparButton = document.getElementById('limpar')
+    const limparButton = document.getElementById('limpar');
     
     
     codificarButton.addEventListener('click', function() {
